@@ -1,1 +1,1 @@
-web: python3 -m playwright install chromium && python3 watcher.py
+web: python3 -m playwright install --with-deps chromium && python3 watcher.py
