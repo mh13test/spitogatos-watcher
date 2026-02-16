@@ -9,7 +9,7 @@ SEARCH_URL = "https://www.spitogatos.gr/en/for_sale-houses/corinthia?maximum_pri
 BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 
-MIN_PLOT = 1000
+MIN_PLOT = 100
 CHECK_INTERVAL = 900  # 15 minutes
 
 seen = set()
@@ -78,3 +78,4 @@ async def main():
         await asyncio.sleep(CHECK_INTERVAL)
 
 asyncio.run(main())
+
